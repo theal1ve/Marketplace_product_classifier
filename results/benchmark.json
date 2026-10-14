@@ -1,0 +1,37 @@
+{
+  "cpu": "Intel64 Family 6 Model 167 Stepping 1, GenuineIntel",
+  "torch": "2.14.0+cu126",
+  "threads": 6,
+  "n_samples": 2000,
+  "size_on_disk_mb": 119.3,
+  "variants": {
+    "cpu_fp32": {
+      "p50_ms": 4.4750000815838575,
+      "p95_ms": 9.708130196668206,
+      "mean_ms": 5.00360400415957,
+      "n": 200,
+      "throughput_per_s": 282.61011238400755,
+      "accuracy": 0.98
+    },
+    "cpu_int8": {
+      "p50_ms": 7.287750020623207,
+      "p95_ms": 11.863174987956882,
+      "mean_ms": 7.5197609956376255,
+      "n": 200,
+      "throughput_per_s": 403.7701798062618,
+      "accuracy": 0.98,
+      "agreement_with_fp32": 0.996,
+      "size_mb": 109.7
+    },
+    "gpu_fp16": {
+      "p50_ms": 4.5680999755859375,
+      "p95_ms": 5.421760061290115,
+      "mean_ms": 4.690819999668747,
+      "n": 200,
+      "throughput_per_s": 2114.5645709070423,
+      "accuracy": 0.975
+    }
+  },
+  "parameters": 29205975,
+  "gpu": "NVIDIA GeForce RTX 3070"
+}

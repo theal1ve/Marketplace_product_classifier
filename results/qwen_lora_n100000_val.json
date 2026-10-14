@@ -1,0 +1,36 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "n_train": 100000,
+    "epochs": 1,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "lr": 0.0002,
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "seed": 777,
+    "val_n": 0,
+    "eval_batch": 64,
+    "fp32": false,
+    "eval_test": false,
+    "tag": "n100000"
+  },
+  "n_train": 100000,
+  "n_val": 70093,
+  "params_total": 502900864,
+  "params_trainable": 8833152,
+  "train_seconds": 5786,
+  "train_samples_per_second": 17.286,
+  "train_loss": 1.0415801303100587,
+  "peak_gpu_gb": 10.49,
+  "mean_tokens": 155.70756,
+  "share_truncated": 0.27004,
+  "val": {
+    "accuracy": 0.9488536658439501,
+    "f1_macro": 0.9049588269870159,
+    "f1_weighted": 0.9488064175043481,
+    "predict_seconds": 1227,
+    "predict_samples_per_s": 57.1
+  }
+}
